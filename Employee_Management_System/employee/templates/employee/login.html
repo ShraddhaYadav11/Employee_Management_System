@@ -1,0 +1,50 @@
+{% extends 'employee/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<style>
+    .container {
+        background-color: cadetblue;
+    }
+
+    .card{
+        position: center;
+        margin-left: 100%;
+        height: 25rem;
+        border-radius: 3rem;
+        margin-top: 10%;
+    }
+    body{
+        background-color: cadetblue;
+    }
+</style>
+
+
+
+<div class="container text-center">
+  
+     
+
+    <div class="col-sm-4">
+        <div class="card" style="width: 25rem;">
+            <div class="card-body">
+                <h5 class="card-title">Register Here</h5>
+                <form action="" method="POST" class="form-control">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <a href="{% url 'option' %}" class="btn btn-info">Sign In</a>
+                    
+                </form>   
+                <a href="{% url 'home' %}" class="card-link">Already have account?</a>
+            
+               
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+{% endblock content %}

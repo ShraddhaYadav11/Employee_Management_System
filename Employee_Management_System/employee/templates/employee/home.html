@@ -1,0 +1,92 @@
+
+
+
+{% extends 'employee/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<style>
+    .container{
+        
+        margin-left: 3%;
+    }
+    body{
+      background-color: cadetblue;
+    }
+</style>
+
+
+
+<div class="container">
+    <h1 class="text-light mb-5 mr-6 border-bottom text-center bg-secondary ">Welcome To Student Study Portal</h1>
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4 ml-5">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Acadamic Study Portal</div>
+                <div class="card-body">
+                  
+                  <p class="card-text">Acadamic Study Materials for 2nd year Engineering Student of Lokmanya Tilak college of Engineering</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Ouiz</div>
+                <div class="card-body">
+                 
+                  <p class="card-text">Quiz for Engineering Student of Lokmanya Tilak college of Engineering</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">books</div>
+                <div class="card-body">
+                  
+                  <p class="card-text">Browse a Books for your Acadamic Lokmanya Tilak college of Engineering</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="row text-white text-center mb-5">
+        <div class="col-sm-4 ">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Dictionary</div>
+                <div class="card-body">
+                  
+                  <p class="card-text">a dictionary is available  for  Student of Lokmanya Tilak college of Engineering</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Wikipedia</div>
+                <div class="card-body">
+                  
+                  <p class="card-text">Search on wikipedia about your doubt regarding homework and assignment to get fast results  </p>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card-header">To Do</div>
+                <div class="card-body">
+          
+                  <p class="card-text">Add your To Do list for your day here and complete before deadline.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    
+    <div class="col-12 text-center">
+      <a href="{% url 'login' %}" class="btn btn-primary">Go to Login Page</a>
+    </div>
+</div>
+
+
+
+
+
+{% endblock content %}
